@@ -30,7 +30,7 @@ class Player{
 class BotPlayer extends Player {
     public BotPlayer(String name){
         super(name);
-        setStrategy("Generic Bot");
+        setStrategy("Simple logic");
     }
 
     @Override
@@ -47,7 +47,7 @@ class BotPlayer extends Player {
 class SchemerBot extends Player {
     public SchemerBot(String name){
         super(name);
-        setStrategy("Schemer Bot");
+        setStrategy("Super smart");
     }
 
     @Override
@@ -91,7 +91,7 @@ class RiskyBotPlayer extends Player {
 class WimpyBotPlayer extends Player {
     public WimpyBotPlayer(String name){
         super(name);
-        setStrategy("WimpyBot");
+        setStrategy("Alwyas skip");
     }
 
     @Override
@@ -123,11 +123,11 @@ public class PassThePigs {
         System.out.println("Let's play Pass the Pigs!");
 
         ArrayList<Player> players = new ArrayList<>();
-        players.add(new BotPlayer("Generic Bot"));
-        players.add(new SchemerBot("SchemerBot"));
-        players.add(new RiskyBotPlayer("RiskyBot"));
-        players.add(new WimpyBotPlayer("WimpyBot"));
-        players.add(new HumanPlayer("Human"));
+        players.add(new BotPlayer("Generic BotSF"));
+        players.add(new SchemerBot("SchemerBotSF"));
+        players.add(new RiskyBotPlayer("RiskyBotSF"));
+        players.add(new WimpyBotPlayer("WimpyBotSF"));
+        players.add(new HumanPlayer("HumanSF"));
 
         runGame(players);
     }
