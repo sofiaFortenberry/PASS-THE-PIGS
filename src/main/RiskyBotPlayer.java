@@ -6,6 +6,9 @@ public class RiskyBotPlayer extends Player {
     }
 
     public boolean wantsToRoll(int myScore, int handScore, ArrayList<Integer> otherScores, int winningScore){
+        if(handScore + myScore >= 100){
+            return false;
+        }
         return true;
     }
 }
